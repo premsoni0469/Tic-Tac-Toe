@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/69c5226908.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <h1>Tic Tac Toe</h1>
+    <div class="stats">
+      <div class="x">
+        <i class="fa-solid fa-xmark"></i>: <span id="xCount">0</span>
+      </div>
+      <div class="o">
+        <i class="fa-solid fa-o"></i>: <span id="oCount">0</span>
+      </div>
+    </div>
+    <div class="winner">
+      <!-- <i class="fa-solid fa-xmark"></i> Wins! -->
+      I am the winner
+    </div>
+    <div class="container">
+      <div class="grid">
+        <div class="cell" id="0">
+          <!-- <i class="fa-solid fa-xmark"></i> -->
+        </div>
+        <div class="cell" id="1">
+          <!-- <i class="fa-solid fa-xmark"></i> -->
+        </div>
+        <div class="cell" id="2">
+          <!-- <i class="fa-solid fa-xmark"></i> -->
+        </div>
+        <div class="cell" id="3">
+          <!-- <i class="fa-solid fa-xmark"></i> -->
+        </div>
+        <div class="cell" id="4">
+          <!-- <i class="fa-solid fa-xmark"></i> -->
+        </div>
+        <div class="cell" id="5">
+          <!-- <i class="fa-solid fa-xmark"></i> -->
+        </div>
+        <div class="cell" id="6">
+          <!-- <i class="fa-solid fa-o"></i> -->
+        </div>
+        <div class="cell" id="7">
+          <!-- <i class="fa-solid fa-xmark"></i> -->
+        </div>
+        <div class="cell" id="8">
+          <!-- <i class="fa-solid fa-xmark"></i> -->
+        </div>
+      </div>
+      <div class="turn">
+        Here, we will determine whose turn it is
+      </div>
+      <button id="restart" onclick="restartGame()">Refresh</button>
+      <button id="reset" onclick="resetGame()">Restart</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
